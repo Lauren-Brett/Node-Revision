@@ -1,5 +1,5 @@
 let http = require("http");
-let dt = require("./myfirstModule");
+let dt = require("./firstModule");
 
 http
   .createServer(function (req, res) {
@@ -8,12 +8,3 @@ http
     res.end();
   })
   .listen(8080);
-
-/////
-// http
-//   .createServer(function (req, res) {
-//     res.writeHead(200, { "Content-Type": "text/html" });
-//     res.write(req.url);
-//     res.end();
-//   })
-//   .listen(8080);
