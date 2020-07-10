@@ -23,11 +23,16 @@ let fs = require("fs");
 //   }
 // );
 
-fs.writeFile(
-  "overwrittenFile.txt",
-  "overwritten what was here, this is new text",
-  function (err) {
-    if (err) throw err;
-    console.log("changed text");
-  }
-);
+// fs.writeFile(
+//   "overwrittenFile.txt",
+//   "overwritten what was here, this is new text",
+//   function (err) {
+//     if (err) throw err;
+//     console.log("changed text");
+//   }
+// );
+
+fs.unlink("fileDeleted.txt", function (err) {
+  if (err) throw err;
+  console.log("file gone");
+});
